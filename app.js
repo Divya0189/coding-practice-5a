@@ -125,7 +125,7 @@ app.delete("/movies/:movieId/", async(request,response) => {
       WHERE 
         movie_id = ${movieId};`;
     await dataBase.run(deleteMovieQuery);
-    response.send("movie removed");
+    response.send("Movie Removed");
 });
 
 module.exports = app;
